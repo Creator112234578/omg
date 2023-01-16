@@ -2007,7 +2007,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3
   m_Range: 11.806573
   m_SpotAngle: 58.59493
   m_InnerSpotAngle: 21.80208
@@ -2892,6 +2892,8 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2980,6 +2982,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1754678169}
   cam: {fileID: 963194228}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433faa8b758afed4f9295b193c697276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ColorEmulationMode: 2
+  _FullscreenColorDepth: {x: 100, y: 100, z: 100}
+  _FullscreenDitherDepth: {x: 16, y: 16, z: 16}
+  _DitheringMatrixSize: 2
+  _InterlacingSize: 255
+  _PostProcessShader: {fileID: 4800000, guid: 56d52fd5b7c6911468179e5a7359ce0e, type: 3}
+  _PostProcessShaderAccurate: {fileID: 4800000, guid: 2ebed186567d3c244a87538744a62920, type: 3}
+  _InterlacingShader: {fileID: 0}
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: f04e28b2a0a72754ba47ff697fa6ebbe, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 5
 --- !u!1 &964773707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,7 +5155,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 2aa3f3d4256b12b4190bf299a7b3998c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d69c88da3a796ae4994e69fd4816e15d, type: 2}
+      objectReference: {fileID: -3033667219593020291, guid: 2aa3f3d4256b12b4190bf299a7b3998c, type: 3}
     - target: {fileID: 919132149155446097, guid: 2aa3f3d4256b12b4190bf299a7b3998c, type: 3}
       propertyPath: m_Name
       value: HEAVY
@@ -5698,6 +5737,7 @@ GameObject:
   - component: {fileID: 1968330140}
   - component: {fileID: 1968330139}
   - component: {fileID: 1968330138}
+  - component: {fileID: 1968330142}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -5783,6 +5823,27 @@ Transform:
   m_Father: {fileID: 507570437}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1968330142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968330137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a4c69f7a9d3ea43907b5765229dc85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TextureWarpingFactor: 0
+  _TextureWarpingMode: 1
+  _VertexGridResolution: 0
+  _UseRetroVertexLighting: 1
+  _RetroLightingNormalFactor: 0
+  _RetroLightFalloffStart: 0
+  _FlatShadingMode: 0
+  _TriangleSortMode: 4
+  _DepthDebugView: 1
 --- !u!1 &1995279261
 GameObject:
   m_ObjectHideFlags: 0
