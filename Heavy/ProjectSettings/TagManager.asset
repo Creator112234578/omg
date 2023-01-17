@@ -7,6 +7,9 @@ TagManager:
   - Button1
   - Button2
   - ExitDoor
+  - Button3
+  - Button4
+  - Button5
   layers:
   - Default
   - TransparentFX
